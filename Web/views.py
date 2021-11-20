@@ -24,7 +24,6 @@ def index(request):
     #                                 'markdown.extensions.tables',
     #                                 'markdown.extensions.toc',
     #                             ])
-    dirURL = []
     for _, _, filename in os.walk(f'{MDDIR}'):
         for name in filename:
             if name == "index.html":
@@ -45,6 +44,13 @@ def index(request):
 
 def content(request, contenturl):
     title = "BeYoung:" + contenturl
+    for _, _, filename in os.walk(f'{MDDIR}'):
+        for name in filename:
+            if name == "index.html":
+                continue
+            elif name[-3:] == ".md":
+                dirURL.append(os.path.splitext(name)[0])
+    dirURL.sort()
     if contenturl in dirURL:
         mddir = contenturl + ".md"
         mddir = (MDDIR / mddir)
