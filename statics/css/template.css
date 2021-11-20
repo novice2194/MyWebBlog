@@ -1,5 +1,5 @@
 body {
-    margin-top: 3%;
+    margin-top: 24px;
     font-family: "JetBrains Mono", "Source Code Pro", "Microsoft YaHei", serif;
     background-image: url(../img/index_img.png);
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ code {
 }
 
 #content {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-right: 5%;
     padding: 56px;
     box-shadow: 12px 12px 8px 0 rgb(0 0 0 / 20%), -6px -7px 8px 0 rgb(0 0 0 / 25%);
