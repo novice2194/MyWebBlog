@@ -7,8 +7,6 @@ from pathlib import Path
 
 MDDIR = Path(__file__).resolve().parent.parent
 MDDIR = (MDDIR / 'statics/Markdown')
-dirURL = []
-
 
 # Create your views here.
 def index(request):
@@ -24,6 +22,7 @@ def index(request):
     #                                 'markdown.extensions.tables',
     #                                 'markdown.extensions.toc',
     #                             ])
+    dirURL = []
     for _, _, filename in os.walk(f'{MDDIR}'):
         for name in filename:
             if name == "index.html":
@@ -44,6 +43,7 @@ def index(request):
 
 def content(request, contenturl):
     title = "BeYoung:" + contenturl
+    dirURL = []
     for _, _, filename in os.walk(f'{MDDIR}'):
         for name in filename:
             if name == "index.html":
