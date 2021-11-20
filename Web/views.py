@@ -25,7 +25,7 @@ def index(request):
     #                                 'markdown.extensions.toc',
     #                             ])
     dirURL = []
-    for _, _, filename in os.walk('statics/Markdown'):
+    for _, _, filename in os.walk(f'{MDDIR}'):
         for name in filename:
             if name == "index.html":
                 continue
