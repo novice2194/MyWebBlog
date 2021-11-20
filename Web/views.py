@@ -8,6 +8,7 @@ from pathlib import Path
 MDDIR = Path(__file__).resolve().parent.parent
 MDDIR = (MDDIR / 'statics/Markdown')
 
+
 # Create your views here.
 def index(request):
     title = "BeYoung首页"
