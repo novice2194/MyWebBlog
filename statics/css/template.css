@@ -1,0 +1,39 @@
+body {
+    font-family: "JetBrains Mono", "Source Code Pro", "Microsoft YaHei", serif;
+    background-image: url(../img/index_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+/*pre {*/
+/*    font-family: "JetBrains Mono", "Source Code Pro", "Microsoft YaHei";*/
+/*}*/
+
+code {
+    font-family: "JetBrains Mono", "Source Code Pro", "Microsoft YaHei", serif;
+
+}
+
+#left {
+    text-align: center;
+    width: 15%;
+    padding: 56px 28px 20px;
+    float: left;
+    box-shadow: 8px 8px 8px 0 rgb(0 0 0 / 20%), inset 6px 6px 8px 0 rgb(0 0 0 / 25%);
+    border-radius: 5% 5% 5% 5%;
+    backdrop-filter: blur(5px);
+}
+
+#content {
+    margin-left: 25%;
+    padding: 56px;
+    box-shadow: 8px 8px 8px 0 rgb(0 0 0 / 20%), inset 6px 6px 8px 0 rgb(0 0 0 / 25%);
+    backdrop-filter: blur(5px);
+}
+
+#content img {
+    width: 100%;
+}
