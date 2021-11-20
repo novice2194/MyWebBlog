@@ -11,6 +11,7 @@ body {
 
 pre {
     font-family: "JetBrains Mono", "Source Code Pro", "Microsoft YaHei", serif;
+    border-radius: 10px 10px 10px 10px;
 }
 
 code {
