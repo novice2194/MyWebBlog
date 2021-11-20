@@ -32,7 +32,7 @@ code {
     margin-right: 5%;
     padding: 56px;
     box-shadow: 12px 12px 8px 0 rgb(0 0 0 / 20%), -6px -7px 8px 0 rgb(0 0 0 / 25%);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
 }
 
 #content img {
