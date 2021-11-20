@@ -2,6 +2,7 @@ import markdown
 import codecs
 import os
 from django.shortcuts import render
+from django.http import HttpResponse
 from pathlib import Path
 
 MDDIR = Path(__file__).resolve().parent.parent
