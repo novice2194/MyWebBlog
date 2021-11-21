@@ -1,0 +1,10 @@
+[uwsgi]
+socket = 127.0.0.1:8000
+chdir = /home/ubuntu/Django
+wsgi-file = Django/wsgi.py
+process = 4
+threads = 50
+stats = %(chdir)/uwsgi/uwsgi.status
+pidfile = %(chdir)/uwsgi/uwsgi.pid
+daemonize = %(chdir)/uwsgi/uwsgi.log
+master = true
