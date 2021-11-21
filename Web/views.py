@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from pathlib import Path
 
 MDDIR = Path(__file__).resolve().parent.parent
-MDDIR = (MDDIR / 'statics/Markdown')
+MDDIR = (MDDIR / 'static/Markdown')
 
 
 # Create your views here.
