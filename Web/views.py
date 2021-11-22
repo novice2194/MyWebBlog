@@ -59,8 +59,8 @@ def content(request, contenturl):
         content = f.read()
         content = markdown.markdown(content,
                                     extensions=[
-                                        'markdown.extensions.codehilite',
                                         'markdown.extensions.extra',
+                                        'markdown.extensions.codehilite',
                                         'markdown.extensions.fenced_code',
                                         'markdown.extensions.tables',
                                         'markdown.extensions.toc',
